@@ -1,2 +1,2 @@
-# personal-website
-Repository of my personal website's codebase
+# portfolio
+Repository of my portfolio website's codebase. 

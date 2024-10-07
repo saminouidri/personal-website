@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Sami Nouidri</title>
+    <link rel="stylesheet" href="{{ asset('css/portfolio.css') }}">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <img src="{{ asset('images/portrait.jpg') }}" alt="Portrait of Sami Nouidri" class="portrait">
+                <div class="header-text">
+                    <h1>Sami Nouidri</h1>
+                    <p>Software Engineer</p>
+                    <p>Born on the 01.03.2001</p>
+                    <p>Rouges-Terres 15A, 2068 Hauterive, Suisse</p>
+                    <p>✆ : 079 929 15 05</p>
+                    <p>🖳 : <a href="mailto:sami.nouidri@pm.me" target=”_blank”>sami.nouidri@pm.me</a></p>
+                    <p>🖳 : <a href="https://linkedin.com/in/sami-nouidri-03a3b12b8" target=”_blank”>LinkedIn</a></p>
+                    <p>🖳 : <a href="https://github.com/saminouidri" target=”_blank”>Github</a></p>
+                </div>
+            </div>
+        </header>
+        <section id="carousel">
+            <h2>Portfolio</h2>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <a href="https://github.com/saminouidri/swissmedic-docgencore" target=”_blank”>
+                        <img src="{{ asset('images/docgencore.png') }}" alt="DocGenCore">
+                    </a>
+                        <p>Shared internal service to generate documents for third-party applications. Done as part of a Bachelor thesis at Swissmedic, using Java Spring-boot 3. Front-end done with ReactJS.</p>
+                </div>
+                <div class="carousel-slide">
+                    <a href="https://github.com/saminouidri/synthesizer-apollon" target=”_blank”>
+                        <img src="{{ asset('images/synth-apollon.png') }}" alt="SynthApollon">
+                    </a>
+                        <p>A standalone virtual instrument (VST), with a sampler and a built-in synthesizer with signal modulation capabilities. Written in C++, with Qt libraries.</p>
+                </div>
+                <div class="carousel-slide">
+                    <a href="https://github.com/saminouidri/stock-manager" target=”_blank”>
+                        <img src="{{ asset('images/stock-manager.png') }}" alt="StockManager">
+                    </a>
+                        <p>A portfolio management web application written in Dart, using the Polygon API to fetch real-time data from financial markets.</p>
+                </div>
+                <div class="carousel-slide">
+                    <a href="https://github.com/saminouidri/the-machine" target=”_blank”>
+                        <img src="{{ asset('images/the-machine.png') }}" alt="TheMachine">
+                    </a>
+                        <p>A proof-of-concept python project to demonstrate various ways of detecting facial features, using artifical intelligence.</p>
+                </div>
+                <div class="carousel-slide">
+                    <a href="https://github.com/saminouidri/daily-round-logger" target=”_blank”>
+                        <img src="{{ asset('images/daily-round.png') }}" alt="DailyRound">
+                    </a>
+                        <p>An android application, written in Dart (Flutter), who's aim is to enable employees of industrial sites to conduct daily rounds. </p>
+                </div>
+            </div>
+            <button class="carousel-button prev" onclick="moveSlide(-1)" disabled>&#10094;</button>
+            <button class="carousel-button next" onclick="moveSlide(1)">&nbsp;&#10095;</button>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>Engineering Graduate, Computer science and communication systems</strong><br>
+                    Haute École ARC (HE-Arc), Software Engineering major, Neuchâtel, Suisse<br>
+                    <em>September 2021 – to this day</em>
+                </li>
+                <li>
+                    <strong>Swiss Federal VET diploma as Electronic Technician + Federal Vocational Baccalaureate</strong><br>
+                    Centre Professionnel du Littoral Neuchâtelois (CPLN-ET), Neuchâtel, Suisse<br>
+                    <em>August 2017 – August 2021</em>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>Bachelor's thesis Project</strong><br>
+                    Swissmedic, Bern<br>
+                    <em>May 2024 – July 2024</em><br>
+                    <ul>
+                        <li>Completed Bachelor's thesis on-site.<br></li>
+                        <li>Developed an internal service for generating various documents & medical certificates, as a Spring Boot API.<br></li>
+                        <li>Developed a front-end web application to demonstrate theservice, in ReactJS.<br></li>
+                        <li>Analysis of project-needs, functional & non-functional requirements with experts in the field.<br></li>
+                        <li>Software quality assured with automated tests and SonarQube.<br></li>
+                        <li>Deployed the service on Azure (AKS) & configured it with Helm and Terraform.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Software Developer (Part-time, Seasonal)</strong><br>
+                    NPS Information Systems Sàrl, Neuchâtel<br>
+                    <em>July 2021 – Present</em><br>
+                    <ul>
+                        <li>Developed data management software solutions in Delphi Pascal (RAD Studio).<br></li>
+                        <li>Designed & implemented databases for enterprise applications (MSSQL, SQLite, & Interbase).</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Apprentice Electronic Technician</strong><br>
+                    Pasan SA Meyer Burger Technologies AG, Neuchâtel<br>
+                    <em>February 2020 – August 2021</em><br>
+                    <ul>
+                        <li>Programmed ATMEL microcontrollers in C & troubleshooting.<br></li>
+                        <li>Designed PCBs using Altium Designer & assembled them.<br></li>
+                        <li>Troubleshot and measured using an oscilloscope & multimeter.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Languages</h2>
+            <p>Bilingual: French – English</p>
+            <p>English: Cambridge First Certificate with advanced proficiency (C1)</p>
+            <p>German: A2, Light conversational</p>
+        </section>
+        <section>
+            <h2>IT Skills</h2>
+            <p>DevOps: Microsoft Azure, Kubernetes, Scrum, Atlassian Suite, Sonarqube, Docker Fullstack.</p>
+            <p>Languages: Java, C#, C/C++, JavaScript, Python, Dart (Flutter), PHP, Laravel, Django, <br> ReactJS, Flask, VueJS, Kafka, SQL, PostgreSQL, Spring, Hibernate, Firebase, Github Actions.</p>
+        </section>
+        <footer>
+            <p>References available upon request.</p>
+            <a href="CV.pdf" target="_blank">Download a copy of this CV.</a>
+        </footer>
+    </div>
+</body>
+</html>
