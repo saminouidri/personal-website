@@ -14,18 +14,41 @@ body {
 }
 
 header {
-  background: linear-gradient(to right, #333, #77b300); /* Gradient background */
-  color: #fff;
+  background: linear-gradient(#fff, #fff), 
+              rgb(177, 177, 177); /* Gradient border */
+  background-clip: padding-box, border-box;
+  border: 2px solid transparent; /* Transparent border for gradient */
+  border-radius: 10px; /* Slight rounding for a card-like look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
   padding: 30px 20px;
   min-height: 150px;
-  text-align: center;
+  text-align: right;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Adjust spacing */
+  justify-content: space-between; /* Keep spacing */
 }
+
+/* Optional hover effect to match the card hover behavior */
+header:hover {
+  transform: scale(1.02); /* Slight zoom */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+header a {
+  color: #333; /* Set a dark color for the links */
+  text-decoration: none; /* Remove underline if desired */
+  transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+header a:hover {
+  color: purple; /* Set a hover color to match the aesthetic */
+}
+
+
 
 .portrait {
   border-radius: 50%;
@@ -47,11 +70,6 @@ header p {
   margin: 5px 0; /* Adjust spacing */
 }
 
-header a {
-  color: #fff;
-  text-decoration: none;
-}
-
 #carousel {
   background: #fff;
   border-radius: 5px; /* Add subtle border radius */
@@ -59,42 +77,73 @@ header a {
   padding: 20px;
 }
 
-.carousel-container {
-  display: flex;
-  overflow-x: scroll; /* Enable horizontal scrolling for slides */
-  scroll-snap-type: x mandatory; /* Enable snapping to slides */
-  width: 100%;
-}
 
+/* Card styling for each carousel slide */
 .carousel-slide {
-  scroll-snap-align: start; /* Snap slides to edges */
-  flex-shrink: 0; /* Prevent slides from shrinking */
-  width: 33.33%;
-  padding: 10px;
-  transition: transform 0.3s ease-in-out; /* Add smooth transition */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px; /* Space between carousel items */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  flex: 0 0 30%; /* Adjust the width of each slide */
+  max-width: 300px; /* Limit maximum width */
+  display: flex;
+  flex-direction: column; /* Make content stack vertically */
+  justify-content: space-between; /* Distribute space evenly */
+  
+  /* Border with gradient */
+  position: relative;
+  border: 2px solid transparent; /* Create space for the gradient border */
+  background-image: linear-gradient(#fff, #fff), /* Background color */
+                    linear-gradient(to right, rgb(0, 191, 255), rgb(255, 7, 255)); /* Gradient border */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
+
+/* Add hover effect for cards */
 .carousel-slide:hover {
-  transform: scale(1.03); /* Slight zoom on hover effect */
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
 }
 
+/* Ensure the images have a consistent size */
 .carousel-slide img {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
+  height: 200px; /* Set a consistent height for all images */
+  object-fit: cover; /* Ensure images cover the container without distortion */
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
+/* Text inside the card */
 .carousel-slide p {
   text-align: center;
-  margin: 10px 0;
+  font-size: 1rem;
+  color: #333;
 }
 
+/* Carousel container should handle horizontal scrolling */
+.carousel-container {
+  display: flex;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Enable snapping to slides */
+  padding-bottom: 20px; /* Add padding to avoid content being cut off */
+  gap: 20px; /* Space between slides */
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for a cleaner look */
+}
+
+/* Carousel button styling (optional, adjust as needed) */
 .carousel-button {
-  display: none; /* Hide buttons initially */
+  display: none;
 }
 
 #carousel:hover .carousel-button {
-  display: block; /* Show buttons on hover */
+  display: block;
 }
 
 .carousel-button {
@@ -116,6 +165,49 @@ header a {
 .carousel-button.next {
   right: 0;
 }
+
+.carousel-slide h4 {
+  margin-bottom: 0.5rem; /* Reduce the space below the title */
+}
+
+.carousel-slide h6 {
+  margin-top: 0.2rem; /* Reduce the space above the subtext */
+  margin-bottom: 1rem; /* Adjust the space below the subtext */
+  color: #666; /* Optional: Add a lighter color to the subtext */
+  font-weight: normal; /* Optional: Make subtext lighter */
+}
+
+
+
+/* Fade-in animation from right */
+@keyframes fadeInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+/* Initial state of sections */
+.section-hidden {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  will-change: opacity, transform;
+}
+
+/* Fade-in active state */
+.section-visible {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+
 
 section {
   background: #fff;
@@ -143,3 +235,4 @@ footer {
   padding: 20px;
   background: linear-gradient(to right, #333, #77b300);
   color: #fff;
+}
