@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
     <title>Sami Nouidri</title>
-    <link rel="stylesheet" href="{{ asset('css/portfolio.css') }}">
-    <script src="{{ asset('js/slidein.js') }}" defer></script>
+    <link id="light-theme" rel="stylesheet" href="{{ asset('css/portfolio-light.css') }}" media="all">
+    <link id="dark-theme" rel="stylesheet" href="{{ asset('css/portfolio-dark.css') }}" media="all" disabled>
+    <script> 
+        const lightThemeUrl = "{{ asset('css/portfolio-light.css') }}";
+        const darkThemeUrl = "{{ asset('css/portfolio-dark.css') }}";
+    </script>
+    <script src="{{ asset('js/scripts.js') }}" defer></script>
+    
+
 </head>
 <body>
     <div class="container">
@@ -24,9 +31,11 @@
                     <p>🖳 : <a href="https://github.com/saminouidri" target=”_blank”>Github</a></p>
                 </div>
             </div>
-        </header>
-        <br>
-        <section class="section-hidden" id="carousel-section">
+            </header>
+            <h6><i>Built using Laravel with ♥.</i> 
+                <button id="dark-mode-toggle" class="dark-toggle">🌙 Dark Mode</button>
+            </h6>
+            <section class="section-hidden" id="carousel-section">
             <h2>Portfolio</h2>
             <div class="carousel-container">
                 <div class="carousel-slide">
@@ -36,6 +45,20 @@
                         <img src="{{ asset('images/docgencore.png') }}" alt="DocGenCore">
                     </a>
                     <p>Shared internal service to generate medical documents for third-party applications.</p>
+                </div>
+                <div class="carousel-slide">
+                    <h4>Clarius XPER</h4>
+                    <h6>Stack : Delphi Pascal, MSSQL, Python</h6>
+                        <img src="{{ asset('images/clariusng.png') }}" alt="DocGenCore">
+                    <p>Contributed to building data management software solutions for Fribourg's state office.</p>
+                </div>
+                <div class="carousel-slide">
+                    <h4>Clarius Mobilius</h4>
+                    <h6>Stack : Dart, Flutter, Firebase</h6>
+                    <a href="https://github.com/saminouidri/daily-round-logger" target="_blank">
+                        <img src="{{ asset('images/daily-round.png') }}" alt="DailyRound">
+                    </a>
+                    <p>An android application, whose aim is to enable employees of industrial sites to conduct daily rounds.</p>
                 </div>
                 <div class="carousel-slide">
                     <h4>Apollo's Synthesizer</h4>
@@ -60,14 +83,6 @@
                         <img src="{{ asset('images/the-machine.png') }}" alt="TheMachine">
                     </a>
                     <p>A proof-of-concept python project to demonstrate various ways of detecting facial features, using artificial intelligence.</p>
-                </div>
-                <div class="carousel-slide">
-                    <h4>Clarius Mobilius</h4>
-                    <h6>Stack : Dart, Flutter, Firebase</h6>
-                    <a href="https://github.com/saminouidri/daily-round-logger" target="_blank">
-                        <img src="{{ asset('images/daily-round.png') }}" alt="DailyRound">
-                    </a>
-                    <p>An android application, whose aim is to enable employees of industrial sites to conduct daily rounds.</p>
                 </div>
             </div>
             <button class="carousel-button prev" onclick="moveSlide(-1)" disabled>&#10094;</button>
@@ -97,7 +112,9 @@
                     NPS Information Systems Sàrl, Neuchâtel<br>
                     <em>July 2021 – Present</em><br>
                     <ul>
-                        <li>Developed data management software solutions in Delphi Pascal (RAD Studio).<br></li>
+                        <li>Developed & contributed to data management software solutions in Delphi Pascal (RAD Studio).<br></li>
+                        <li>Installation of software solutions on-site & training of end-users.<br></li>
+                        <li>Server maintenance of existing solutions (installing SSL certificates, configuring user groups, etc.) - Windows Server 2012<br></li>
                         <li>Designed & implemented databases for enterprise applications (MSSQL, SQLite, & Interbase).</li>
                     </ul>
                 </li>
