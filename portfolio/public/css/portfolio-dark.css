@@ -235,4 +235,33 @@ body {
     top: 20px;
     right: 20px;
   }
+
+  .experience-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .experience-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .experience-image {
+    width: 300px; /* Adjust size as needed */
+    height: 200px;
+    border-radius: 10px; /* Rounded corners */
+    object-fit: cover; /* Ensures the image fits within the container */
+    margin-right: 20px; /* Space between image and text */
+  }
+  
+  .experience-details {
+    max-width: 800px;
+  }
+  
+  .experience-details ul {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
   

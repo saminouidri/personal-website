@@ -92,42 +92,47 @@
         <br>
         <section class="section-hidden" id="experience-section">
             <h2>Experience</h2>
-            <ul>
-                <li>
-                    <strong>Bachelor's thesis Project</strong><br>
-                    Swissmedic, Bern<br>
-                    <em>May 2024 – July 2024</em><br>
-                    <ul>
-                        <li>Completed Bachelor's thesis on-site.<br></li>
-                        <li>Developed an internal service for generating various documents & medical certificates, as a Spring Boot API.<br></li>
-                        <li>Developed a front-end web application to demonstrate the service, in ReactJS.<br></li>
-                        <li>Analysis of project-needs, functional & non-functional requirements with experts in the field.<br></li>
-                        <li>Software quality assured with automated tests and SonarQube.<br></li>
-                        <li>Deployed the service on Azure (AKS) & configured it with Helm and Terraform.</li>
-                    </ul>
+            <ul class="experience-list">
+                <li class="experience-item">
+                     <div class="experience-details">
+                        <strong>Bachelor's thesis Project</strong><br>
+                        Swissmedic, Bern<br>
+                        <em>May 2024 – July 2024</em><br>
+                        <ul>
+                            <li>Completed Bachelor's thesis on-site.<br></li>
+                            <li>Developed an internal service for generating various documents & medical certificates, as a Spring Boot API.<br></li>
+                            <li>Developed a front-end web application to demonstrate the service, in ReactJS.<br></li>
+                            <li>Deployed the service on Azure (AKS) & configured it with Helm and Terraform.</li>
+                        </ul>
+                    </div>
+                    <img src="{{ asset('images/swissmedic.jpg') }}" alt="Swissmedic" class="experience-image">
+                   
                 </li>
-                <br>
-                <li>
-                    <strong>Software Developer (Part-time, Seasonal)</strong><br>
-                    NPS Information Systems Sàrl, Neuchâtel<br>
-                    <em>July 2021 – Present</em><br>
-                    <ul>
-                        <li>Developed & contributed to data management software solutions in Delphi Pascal (RAD Studio).<br></li>
-                        <li>Installation of software solutions on-site & training of end-users.<br></li>
-                        <li>Server maintenance of existing solutions (installing SSL certificates, configuring user groups, etc.) - Windows Server 2012<br></li>
-                        <li>Designed & implemented databases for enterprise applications (MSSQL, SQLite, & Interbase).</li>
-                    </ul>
+                <li class="experience-item">
+                    <div class="experience-details">
+                        <strong>Software Developer (Part-time, Seasonal)</strong><br>
+                        NPS Information Systems Sàrl, Neuchâtel<br>
+                        <em>July 2021 – Present</em><br>
+                        <ul>
+                            <li>Developed & contributed to data management software solutions in Delphi Pascal (RAD Studio).<br></li>
+                            <li>Installation of software solutions on-site & training of end-users.<br></li>
+                            <li>Server maintenance of existing solutions (installing SSL certificates, configuring user groups, etc.) - Windows Server 2012<br></li>
+                        </ul>
+                    </div>
+                    <img src="{{ asset('images/nps.jpg') }}" alt="NPS Information Systems" class="experience-image">                   
                 </li>
-                <br>
-                <li>
-                    <strong>Apprentice Electronic Technician</strong><br>
-                    Pasan SA Meyer Burger Technologies AG, Neuchâtel<br>
-                    <em>February 2020 – August 2021</em><br>
-                    <ul>
-                        <li>Programmed ATMEL microcontrollers in C & troubleshooting.<br></li>
-                        <li>Designed PCBs using Altium Designer & assembled them.<br></li>
-                        <li>Troubleshot and measured using an oscilloscope & multimeter.</li>
-                    </ul>
+                <li class="experience-item">
+                    <div class="experience-details">
+                        <strong>Apprentice Electronic Technician</strong><br>
+                        Pasan SA Meyer Burger Technologies AG, Neuchâtel<br>
+                        <em>February 2020 – August 2021</em><br>
+                        <ul>
+                            <li>Programmed ATMEL microcontrollers in C & troubleshooting of various internal systems.<br></li>
+                            <li>Designed PCBs using Altium Designer & assembled them.<br></li>
+
+                        </ul>
+                    </div>
+                    <img src="{{ asset('images/pasan.jpg') }}" alt="Pasan SA" class="experience-image">
                 </li>
             </ul>
         </section>
