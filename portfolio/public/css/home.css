@@ -7,16 +7,21 @@ body {
 
 .container {
     max-width: 1140px; /* Center and limit width */
-    margin: 0 auto; /* Center the container */
+    margin: 40px auto; /* Add top margin to the entire container */
+    padding: 0 20px; /* Padding on left and right */
+}
+
+.personal-info, .articles {
+    background-color: #fff;
     padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle drop shadow */
+    margin-bottom: 20px; /* Space between the top of the sections and the page */
+    border: 1px solid #ddd; /* Subtle border */
 }
 
 .personal-info {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Space below the personal info section */
 }
 
 .profile-section {
@@ -54,10 +59,6 @@ body {
 }
 
 .articles {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-left: 20px; /* Add margin between columns */
 }
 
@@ -87,9 +88,6 @@ body {
 @media (max-width: 768px) {
     .personal-info, .articles {
         padding: 15px;
-    }
-
-    .articles {
         margin-left: 0; /* Remove margin on smaller screens */
     }
 

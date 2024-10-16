@@ -115,6 +115,7 @@
                         <em>July 2021 – Present</em><br>
                         <ul>
                             <li>Developed & contributed to data management software solutions in Delphi Pascal (RAD Studio).<br></li>
+                            <li>Main clients include Fribourg's state office, Geneva's SIG and wastewater treatment plans across Switzerland.<br></li>
                             <li>Installation of software solutions on-site & training of end-users.<br></li>
                             <li>Server maintenance of existing solutions (installing SSL certificates, configuring user groups, etc.) - Windows Server 2012<br></li>
                         </ul>
@@ -129,7 +130,7 @@
                         <ul>
                             <li>Programmed ATMEL microcontrollers in C & troubleshooting of various internal systems.<br></li>
                             <li>Designed PCBs using Altium Designer & assembled them.<br></li>
-
+                            <li>Communication work with outside suppliers to manufacture specialty PCBs for photovoltaic cell measurement.<br></li>
                         </ul>
                     </div>
                     <img src="{{ asset('images/pasan.jpg') }}" alt="Pasan SA" class="experience-image">
