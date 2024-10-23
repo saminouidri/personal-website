@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sami's Page</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}"> <!-- Link to your custom CSS -->
+
+    <!-- Default stylesheet -->
+    <link id="modern-theme" rel="stylesheet" href="{{ asset('css/home.css') }}" media="all">
+    <link id="fun-theme" rel="stylesheet" href="{{ asset('css/home-fun.css') }}" media="all" disabled>
+    
+    <script src="{{ asset('js/home-script.js') }}" defer></script>
 </head>
 <body>
+
+    <!-- Toggle Button for CSS Stylesheets -->
+    <div class="text-center mb-3">
+    <button id="style-toggle-btn" class="btn btn-primary">Switch to Fun Style</button>
+
+    </div>
 
     <!-- Main container for the blog layout -->
     <div class="container">
@@ -30,14 +41,14 @@
                     <h3>Connect</h3>
                     <ul>
                         <li><a href="https://github.com/johndoe">GitHub</a></li>
-                        <li><a href="https://linkedin.com/in/johndoe">LinkedIn</a></li>
+                        <li><a href="https://linkedin.sami-nouidri.ch">LinkedIn</a></li>
                         <li><a href="https://sami-nouidri.ch/portfolio">Portfolio/CV (for recruiters only)</a></li>
                     </ul>
                 </div>
             </aside>
 
-           <!-- Right column for articles -->
-           <section class="col-md-8 articles">
+            <!-- Right column for articles -->
+            <section class="col-md-8 articles">
                 @foreach($articles as $article)
                     <article class="blog-post">
                         <h2>{{ $article->title }}</h2>
@@ -46,9 +57,7 @@
                         <a href="{{ route('article.show', $article->id) }}" class="btn btn-secondary">Read more...</a>
                     </article>
                 @endforeach
-
             </section>
-
 
         </div>
     </div>

@@ -95,3 +95,22 @@ body {
         font-size: 1.5em;
     }
 }
+
+#style-toggle-btn {
+    position: fixed;  /* Keeps the button fixed in place */
+    top: 20px;        /* Distance from the top of the page */
+    right: 20px;      /* Distance from the right side of the page */
+    z-index: 1000;    /* Ensures the button is above other elements */
+    padding: 10px 20px; /* Add some padding for better look */
+    background-color: #007bff; /* Default button color */
+    color: white;     /* Button text color */
+    border: none;     /* Remove default button border */
+    border-radius: 5px; /* Slight rounding of button corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#style-toggle-btn:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+    cursor: pointer;           /* Pointer cursor on hover */
+}
+

@@ -11,7 +11,7 @@
         const lightThemeUrl = "{{ asset('css/portfolio-light.css') }}";
         const darkThemeUrl = "{{ asset('css/portfolio-dark.css') }}";
     </script>
-    <script src="{{ asset('js/scripts.js') }}" defer></script>
+    <script src="{{ asset('js/portfolio-scripts.js') }}" defer></script>
     
 
 </head>

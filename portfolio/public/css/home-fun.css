@@ -1,0 +1,134 @@
+/* 90s Retro Style */
+body {
+    font-family: "Courier New", Courier, monospace; /* Classic monospace font */
+    background-color: #c0c0c0; /* Light gray background common in early web design */
+    margin: 0;
+    padding: 0;
+    color: #000; /* Black text */
+}
+
+.container {
+    max-width: 100%; /* Take full width */
+    margin: 20px auto; /* Add top margin */
+    padding: 0;
+    border: 3px solid #000; /* Black border around the container */
+}
+
+.personal-info, .articles {
+    background-color: #fff;
+    padding: 10px;
+    border: 3px solid #000; /* Thick black borders */
+    margin-bottom: 20px;
+}
+
+.personal-info {
+    background-color: #ffcc00; /* Bright yellow background for personal info section */
+    color: #000; /* Black text */
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #000; /* Boxy image with black border */
+    margin-bottom: 10px;
+}
+
+.personal-details h3, .social-links h3 {
+    background-color: #0000ff; /* Bright blue background for headers */
+    color: #fff; /* White text */
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.social-links ul {
+    list-style: disc inside; /* Old-school bullet points */
+    padding: 10px;
+    background-color: #00ff00; /* Bright green background */
+    border: 2px solid #000; /* Black border around the links */
+}
+
+.social-links ul li {
+    margin-bottom: 5px;
+}
+
+.social-links ul li a {
+    color: #ff0000; /* Bright red links */
+    text-decoration: underline; /* Underlined by default */
+}
+
+.social-links ul li a:hover {
+    background-color: #000; /* Black background on hover */
+    color: #fff; /* White text on hover */
+}
+
+.articles {
+    margin-left: 10px;
+    background-color: #ffcc00; /* Same yellow background as personal info */
+    padding: 10px;
+    border: 3px solid #000;
+}
+
+.blog-post {
+    margin-bottom: 30px;
+    border: 3px solid #000; /* Black border around each post */
+    padding: 10px;
+    background-color: #ffffff; /* White background for posts */
+}
+
+.blog-post h2 {
+    font-size: 2em;
+    color: #0000ff; /* Bright blue headers */
+    text-decoration: underline;
+}
+
+.blog-post p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.blog-post a {
+    color: #ff0000; /* Bright red links */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.blog-post a:hover {
+    background-color: #000; /* Black background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Remove responsive design features for an old-school feel */
+@media (max-width: 768px) {
+    .personal-info, .articles {
+        padding: 10px;
+        margin-left: 0;
+    }
+
+    .blog-post h2 {
+        font-size: 1.75em;
+    }
+}
+
+#style-toggle-btn {
+    position: fixed;  /* Keeps the button fixed in place */
+    top: 20px;        /* Distance from the top of the page */
+    right: 20px;      /* Distance from the right side of the page */
+    z-index: 1000;    /* Ensures the button is above other elements */
+    padding: 10px 20px; /* Add some padding for better look */
+    background-color: #007bff; /* Default button color */
+    color: white;     /* Button text color */
+    border: none;     /* Remove default button border */
+    border-radius: 5px; /* Slight rounding of button corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#style-toggle-btn:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+    cursor: pointer;           /* Pointer cursor on hover */
+}
