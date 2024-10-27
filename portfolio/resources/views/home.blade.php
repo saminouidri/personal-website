@@ -7,8 +7,8 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Default stylesheet -->
-    <link id="modern-theme" rel="stylesheet" href="{{ asset('css/home.css') }}" media="all">
-    <link id="fun-theme" rel="stylesheet" href="{{ asset('css/home-fun.css') }}" media="all" disabled>
+    <link id="fun-theme" rel="stylesheet" href="{{ asset('css/home-fun.css') }}" media="all">
+    <link id="modern-theme" rel="stylesheet" href="{{ asset('css/home.css') }}" media="all" disabled>
     
     <script src="{{ asset('js/home-script.js') }}" defer></script>
 </head>
@@ -16,7 +16,7 @@
 
     <!-- Toggle Button for CSS Stylesheets -->
     <div class="text-center mb-3">
-    <button id="style-toggle-btn" class="btn btn-primary">Switch to Fun Style</button>
+    <button id="style-toggle-btn" class="btn btn-primary">Switch to Modern Style</button>
 
     </div>
 
@@ -40,11 +40,13 @@
                 <div class="social-links">
                     <h3>Connect</h3>
                     <ul>
-                        <li><a href="https://github.com/johndoe">GitHub</a></li>
-                        <li><a href="https://linkedin.sami-nouidri.ch">LinkedIn</a></li>
-                        <li><a href="https://sami-nouidri.ch/portfolio">Portfolio/CV (for recruiters only)</a></li>
+                        <li><a href="https://github.com/saminouidri" target="_blank">GitHub</a></li>
+                        <li><a href="https://linkedin.sami-nouidri.ch" target="_blank">LinkedIn</a></li>
+                        <li><a href="/portfolio" target="_blank">Portfolio/CV (for recruiters only)</a></li>
                     </ul>
                 </div>
+
+                <h6><i>Built using Laravel with ♥.</i></h6>
             </aside>
 
             <!-- Right column for articles -->
@@ -58,9 +60,10 @@
                     </article>
                 @endforeach
             </section>
-
+            
         </div>
     </div>
+    
 
 </body>
 </html>

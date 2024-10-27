@@ -32,7 +32,9 @@
                 </div>
             </div>
             </header>
-            <h6><i>Built using Laravel with ♥.</i> 
+            <h6><i>Built using Laravel with ♥.</i>
+            <br> 
+                <i><a href="/">→ Home</a></i>
                 <button id="dark-mode-toggle" class="dark-toggle">🌙 Dark Mode</button>
             </h6>
             <section class="section-hidden" id="carousel-section">
@@ -130,7 +132,7 @@
                         <ul>
                             <li>Programmed ATMEL microcontrollers in C & troubleshooting of various internal systems.<br></li>
                             <li>Designed PCBs using Altium Designer & assembled them.<br></li>
-                            <li>Communication work with outside suppliers to manufacture specialty PCBs for photovoltaic cell measurement.<br></li>
+                            <li>Communication work with outside suppliers to manufacture specialty PCBs, for photovoltaic cell measurement.<br></li>
                         </ul>
                     </div>
                     <img src="{{ asset('images/pasan.jpg') }}" alt="Pasan SA" class="experience-image">

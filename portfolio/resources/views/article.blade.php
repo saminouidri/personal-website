@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $article->title }} - My Blog</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}"> <!-- Custom styles if needed -->
+    <link rel="stylesheet" href="{{ asset('css/article.css') }}"> <!-- Custom styles if needed -->
 </head>
 <body>
     <div class="container">
@@ -25,7 +25,7 @@
 
                     <!-- Author and article details -->
                     <div class="author-info">
-                        <p><strong>Written by:</strong> {{ $article->author_name }}</p>
+                        <!--<p><strong>Written by:</strong> {{ $article->author_name }}</p>-->
                         <p><strong>Category:</strong> {{ $article->category->name }}</p>
                     </div>
 

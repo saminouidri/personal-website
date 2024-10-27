@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const alternateTheme = document.getElementById('fun-theme'); // Assuming id="alternate-theme" for alternate CSS
 
     // Check localStorage or default to light theme
-    let currentTheme = localStorage.getItem('theme') || 'light';
+    let currentTheme = localStorage.getItem('theme') || 'alternate';
     setTheme(currentTheme);
 
     // Add event listener for the toggle button
     toggleButton.addEventListener('click', function () {
-        currentTheme = (currentTheme === 'light') ? 'alternate' : 'light';
+        currentTheme = (currentTheme === 'alternate') ? 'light' : 'alternate';
         setTheme(currentTheme);
     });
 
@@ -17,14 +17,14 @@ document.addEventListener('DOMContentLoaded', function () {
         if (theme === 'alternate') {
             alternateTheme.disabled = false;  // Enable alternate theme
             lightTheme.disabled = true;       // Disable light theme
-            toggleButton.textContent = '☀️ Switch to Modern Mode'; // Change button text
+            toggleButton.textContent = '🤖 Switch to Modern UI'; // Change button text
         } else {
             alternateTheme.disabled = true;   // Disable alternate theme
             lightTheme.disabled = false;      // Enable light theme
-            toggleButton.textContent = '🌙 Switch to Fun Style'; // Change button text
+            toggleButton.textContent = '👾 Make the front-end fun'; 
         }
 
-        // Save the selected theme to localStorage
+ 
         localStorage.setItem('theme', theme);
     }
 });
