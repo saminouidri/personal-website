@@ -1,267 +1,254 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Lighter text */
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .container {
-    max-width: 960px;
-    margin: auto;
-    padding: 2rem 0;
-  }
-  
-  header {
-    background: linear-gradient(#1f1f1f, #1f1f1f), 
-                 rgb(177, 177, 177); /* Dark gradient */
-    background-clip: padding-box, border-box;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Lighter shadow */
-    padding: 30px 20px;
-    min-height: 150px;
-    text-align: right;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  }
-  
-  .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  header:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2); /* Increase shadow */
-  }
-  
-  header a {
-    color: #e0e0e0; /* Light link color for dark background */
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  header a:hover {
-    color: lightblue; /* Lighter hover color */
-  }
-  
-  .portrait {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
-  }
-  
-  .header-text {
-    max-width: 600px;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 2.5em;
-  }
-  
-  header p {
-    margin: 5px 0;
-  }
-  
-  #carousel {
-    background: #1f1f1f; /* Dark background */
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
-    padding: 20px;
-  }
-  
-  /* Card styling for each carousel slide */
-  .carousel-slide {
-    background-color: #1f1f1f; /* Dark background for cards */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Lighter shadow */
-    padding: 20px;
-    margin: 10px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    flex: 0 0 30%;
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  
-    /* Gradient border for dark mode */
-    position: relative;
-    border: 2px solid transparent;
-    background-image: linear-gradient(#1f1f1f, #1f1f1f), /* Background color */
-                      linear-gradient(to right, rgb(0, 191, 255), rgb(255, 7, 255)); /* Gradient border */
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-  }
-  
-  /* Add hover effect for cards */
-  .carousel-slide:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
-  }
-  
-  /* Ensure the images have a consistent size */
-  .carousel-slide img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
-  /* Text inside the card */
-  .carousel-slide p {
-    text-align: center;
-    font-size: 1rem;
-    color: #e0e0e0; /* Light text */
-  }
-  
-  /* Carousel container should handle horizontal scrolling */
-  .carousel-container {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 20px;
-    gap: 20px;
-  }
-  
-  .carousel-container::-webkit-scrollbar {
-    display: none;
-  }
-  
-  /* Carousel button styling (optional, adjust as needed) */
-  .carousel-button {
-    display: none;
-  }
-  
-  #carousel:hover .carousel-button {
-    display: block;
-  }
-  
-  .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
-    color: #1f1f1f;
-    font-size: 2em;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .carousel-button.prev {
-    left: 0;
-  }
-  
-  .carousel-button.next {
-    right: 0;
-  }
-  
-  .carousel-slide h4 {
-    margin-bottom: 0.5rem;
-  }
-  
-  .carousel-slide h6 {
-    margin-top: 0.2rem;
-    margin-bottom: 1rem;
-    color: #999; /* Lighter color for subtext */
-    font-weight: normal;
-  }
-  
-  /* Fade-in animation from right */
-  @keyframes fadeInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-  }
-  
-  .section-hidden {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+header {
+  background: linear-gradient(#1f1f1f, #1f1f1f), rgb(177, 177, 177);
+  background-clip: padding-box, border-box;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  padding: 30px 20px;
+  min-height: 150px;
+  text-align: right;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+header a {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+header a:hover {
+  color: lightblue;
+}
+
+.portrait {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.header-text {
+  max-width: 600px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin: 5px 0;
+}
+
+#carousel {
+  background: #1f1f1f;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  padding: 20px;
+}
+
+.carousel-slide {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  flex: 0 0 30%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#1f1f1f, #1f1f1f), linear-gradient(to right, rgb(0, 191, 255), rgb(255, 7, 255));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.carousel-slide:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.carousel-slide p {
+  text-align: center;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.carousel-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 20px;
+  gap: 20px;
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-button {
+  display: none;
+}
+
+#carousel:hover .carousel-button {
+  display: block;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: #1f1f1f;
+  font-size: 2em;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-button.prev {
+  left: 0;
+}
+
+.carousel-button.next {
+  right: 0;
+}
+
+.carousel-slide h4 {
+  margin-bottom: 0.5rem;
+}
+
+.carousel-slide h6 {
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+  color: #999;
+  font-weight: normal;
+}
+
+@keyframes fadeInRight {
+  0% {
     opacity: 0;
     transform: translateX(100px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-    will-change: opacity, transform;
   }
-  
-  .section-visible {
+  100% {
     opacity: 1;
     transform: translateX(0);
-    transition: opacity 1s ease-out, transform 1s ease-out;
   }
-  
-  section {
-    background: #1f1f1f;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
-    padding: 2rem;
-  }
-  
-  section h2 {
-    border-bottom: 1px solid #444; /* Dark border */
-    padding-bottom: 1rem;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  ul li {
-    margin: 1rem 0;
-  }
-  
-  footer {
-    background: linear-gradient(#1f1f1f, #1f1f1f), 
-                rgb(177, 177, 177); /* Dark gradient */
-    background-clip: padding-box, border-box;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-    padding: 30px 20px;
-    min-height: 100px;
-    text-align: center;
-    color: #e0e0e0;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  }
+}
 
-  .dark-toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
+.section-hidden {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  will-change: opacity, transform;
+}
 
-  .experience-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .experience-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-  }
-  
-  .experience-image {
-    width: 300px; /* Adjust size as needed */
-    height: 200px;
-    border-radius: 10px; /* Rounded corners */
-    object-fit: cover; /* Ensures the image fits within the container */
-    margin-right: 20px; /* Space between image and text */
-  }
-  
-  .experience-details {
-    max-width: 800px;
-  }
-  
-  .experience-details ul {
-    padding-left: 20px;
-    list-style-type: disc;
-  }
-  
+.section-visible {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+section {
+  background: #1f1f1f;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+}
+
+section h2 {
+  border-bottom: 1px solid #444;
+  padding-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 1rem 0;
+}
+
+footer {
+  background: linear-gradient(#1f1f1f, #1f1f1f), rgb(177, 177, 177);
+  background-clip: padding-box, border-box;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  padding: 30px 20px;
+  min-height: 100px;
+  text-align: center;
+  color: #e0e0e0;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.dark-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.experience-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.experience-image {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.experience-details {
+  max-width: 800px;
+}
+
+.experience-details ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}

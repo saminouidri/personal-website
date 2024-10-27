@@ -1,33 +1,30 @@
-/* 90s Retro Style */
 body {
-    font-family: "Courier New", Courier, monospace; /* Classic monospace font */
-    background-image: url('/images/background.gif'); /* Replace with your GIF path */
- /* Make sure the GIF covers the entire page */
-    background-repeat: repeat; /* Repeat to create a seamless loop */
-    background-position: center; /* Center the background image */
+    font-family: "Courier New", Courier, monospace;
+    background-image: url('/images/background.gif');
+    background-repeat: repeat;
+    background-position: center;
     margin: 0;
     padding: 0;
-    color: #000; /* Black text */
+    color: #000;
 }
 
-
 .container {
-    max-width: 100%; /* Take full width */
-    margin: 20px auto; /* Add top margin */
+    max-width: 100%;
+    margin: 20px auto;
     padding: 0;
-    border: 3px solid #000; /* Black border around the container */
+    border: 3px solid #000;
 }
 
 .personal-info, .articles {
     background-color: #fff;
     padding: 10px;
-    border: 3px solid #000; /* Thick black borders */
+    border: 3px solid #000;
     margin-bottom: 20px;
 }
 
 .personal-info {
-    background-color: #698cff; /* Bright yellow background for personal info section */
-    color: #000; /* Black text */
+    background-color: #698cff;
+    color: #000;
 }
 
 .profile-section {
@@ -38,23 +35,23 @@ body {
 .profile-img {
     width: 120px;
     height: 120px;
-    border: 3px solid #000; /* Boxy image with black border */
+    border: 3px solid #000;
     margin-bottom: 10px;
 }
 
 .personal-details h3, .social-links h3 {
-    background-color: #0000ff; /* Bright blue background for headers */
-    color: #fff; /* White text */
+    background-color: #0000ff;
+    color: #fff;
     padding: 5px;
     margin-bottom: 10px;
     text-align: center;
 }
 
 .social-links ul {
-    list-style: disc inside; /* Old-school bullet points */
+    list-style: disc inside;
     padding: 10px;
-    background-color: #00ff22; /* Bright green background */
-    border: 2px solid #000; /* Black border around the links */
+    background-color: #00ff22;
+    border: 2px solid #000;
 }
 
 .social-links ul li {
@@ -62,32 +59,32 @@ body {
 }
 
 .social-links ul li a {
-    color: #ff0000; /* Bright red links */
-    text-decoration: underline; /* Underlined by default */
+    color: #ff0000;
+    text-decoration: underline;
 }
 
 .social-links ul li a:hover {
-    background-color: #000; /* Black background on hover */
-    color: #fff; /* White text on hover */
+    background-color: #000;
+    color: #fff;
 }
 
 .articles {
     margin-left: 10px;
-    background-color: #6200ff; /* Same yellow background as personal info */
+    background-color: #6200ff;
     padding: 10px;
     border: 3px solid #000;
 }
 
 .blog-post {
     margin-bottom: 30px;
-    border: 3px solid #000; /* Black border around each post */
+    border: 3px solid #000;
     padding: 10px;
-    background-color: #ffffff; /* White background for posts */
+    background-color: #ffffff;
 }
 
 .blog-post h2 {
     font-size: 2em;
-    color: #0000ff; /* Bright blue headers */
+    color: #0000ff;
     text-decoration: underline;
 }
 
@@ -97,17 +94,16 @@ body {
 }
 
 .blog-post a {
-    color: #ff0000; /* Bright red links */
+    color: #ff0000;
     text-decoration: underline;
     font-weight: bold;
 }
 
 .blog-post a:hover {
-    background-color: #000; /* Black background on hover */
-    color: #fff; /* White text on hover */
+    background-color: #000;
+    color: #fff;
 }
 
-/* Remove responsive design features for an old-school feel */
 @media (max-width: 768px) {
     .personal-info, .articles {
         padding: 10px;
@@ -120,19 +116,19 @@ body {
 }
 
 #style-toggle-btn {
-    position: fixed;  /* Keeps the button fixed in place */
-    top: 20px;        /* Distance from the top of the page */
-    right: 20px;      /* Distance from the right side of the page */
-    z-index: 1000;    /* Ensures the button is above other elements */
-    padding: 10px 20px; /* Add some padding for better look */
-    background-color: #007bff; /* Default button color */
-    color: white;     /* Button text color */
-    border: none;     /* Remove default button border */
-    border-radius: 5px; /* Slight rounding of button corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #style-toggle-btn:hover {
-    background-color: #0056b3; /* Darker shade of blue on hover */
-    cursor: pointer;           /* Pointer cursor on hover */
+    background-color: #0056b3;
+    cursor: pointer;
 }

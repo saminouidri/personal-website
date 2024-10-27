@@ -6,22 +6,22 @@ body {
 }
 
 .container {
-    max-width: 1140px; /* Center and limit width */
-    margin: 40px auto; /* Add top margin to the entire container */
-    padding: 0 20px; /* Padding on left and right */
+    max-width: 1140px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 .personal-info, .articles {
     background-color: #fff;
     padding: 20px;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle drop shadow */
-    margin-bottom: 20px; /* Space between the top of the sections and the page */
-    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
 }
 
 .personal-info {
-    margin-bottom: 20px; /* Space below the personal info section */
+    margin-bottom: 20px;
 }
 
 .profile-section {
@@ -59,7 +59,7 @@ body {
 }
 
 .articles {
-    margin-left: 20px; /* Add margin between columns */
+    margin-left: 20px;
 }
 
 .blog-post {
@@ -84,11 +84,10 @@ body {
     text-decoration: underline;
 }
 
-/* Responsive behavior */
 @media (max-width: 768px) {
     .personal-info, .articles {
         padding: 15px;
-        margin-left: 0; /* Remove margin on smaller screens */
+        margin-left: 0;
     }
 
     .blog-post h2 {
@@ -97,20 +96,19 @@ body {
 }
 
 #style-toggle-btn {
-    position: fixed;  /* Keeps the button fixed in place */
-    top: 20px;        /* Distance from the top of the page */
-    right: 20px;      /* Distance from the right side of the page */
-    z-index: 1000;    /* Ensures the button is above other elements */
-    padding: 10px 20px; /* Add some padding for better look */
-    background-color: #007bff; /* Default button color */
-    color: white;     /* Button text color */
-    border: none;     /* Remove default button border */
-    border-radius: 5px; /* Slight rounding of button corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #style-toggle-btn:hover {
-    background-color: #0056b3; /* Darker shade of blue on hover */
-    cursor: pointer;           /* Pointer cursor on hover */
+    background-color: #0056b3;
+    cursor: pointer;
 }
-

@@ -6,7 +6,6 @@
     <title>Sami's Page</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Default stylesheet -->
     <link id="fun-theme" rel="stylesheet" href="{{ asset('css/home-fun.css') }}" media="all">
     <link id="modern-theme" rel="stylesheet" href="{{ asset('css/home.css') }}" media="all" disabled>
     
@@ -14,13 +13,12 @@
 </head>
 <body>
 
-    <!-- Toggle Button for CSS Stylesheets -->
+
     <div class="text-center mb-3">
     <button id="style-toggle-btn" class="btn btn-primary">Switch to Modern Style</button>
 
     </div>
 
-    <!-- Main container for the blog layout -->
     <div class="container">
         <div class="row justify-content-center">
 
