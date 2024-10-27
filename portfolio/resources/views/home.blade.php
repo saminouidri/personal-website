@@ -40,6 +40,7 @@
                     <ul>
                         <li><a href="https://github.com/saminouidri" target="_blank">GitHub</a></li>
                         <li><a href="https://linkedin.sami-nouidri.ch" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://www.astrobin.com/users/saminouidri/" target="_blank">Astrophotography</a></li>
                         <li><a href="/portfolio" target="_blank">Portfolio/CV (for recruiters only)</a></li>
                     </ul>
                 </div>
